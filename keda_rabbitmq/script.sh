@@ -34,7 +34,7 @@ install_prereq() {
 # }
 
 # Function: Install KEDA using Helm
-# install_keda() {
+install_keda() {
   read -p "Enter the namespace for KEDA installation (default: keda): " keda_ns
   keda_ns=${keda_ns:-keda}  # Set default namespace for KEDA installation
   echo -e "\nInstalling KEDA in $keda_ns namespace\n"
